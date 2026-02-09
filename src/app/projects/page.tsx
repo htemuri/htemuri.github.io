@@ -7,7 +7,7 @@ const projects: Project[] = [
     shortDescription:
       "A cycle-accurate LC-3b microarchitecture simulator written in Go.",
     yearWorked: "2026",
-    linkToBlog: "",
+    linkToBlog: "https://htemuri.github.io/0xBADC0DE/projects/lc3b",
     linkToRepo: "https://github.com/htemuri/lc-3b-sim",
     description: (
       <p>
