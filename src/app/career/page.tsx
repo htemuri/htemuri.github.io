@@ -241,9 +241,10 @@ const azureSkills = [
 export default function CareerPage() {
   return (
     <div className="flex max-lg:flex-col h-full items-stretch w-full">
-      <div className="flex flex-col gap-3 lg:max-w-5/8 lg:w-1/2 pl-6 max-lg:pr-5 pt-4 max-lg:py-3">
+      <div className="h-full overflow-y-auto flex flex-col gap-3 lg:max-w-5/8 lg:w-1/2 pl-6 max-lg:pr-5 pt-4 max-lg:py-3 lg:pr-4">
         <div className="flex items-center">
-          <h1 className="font-medium text-xl">Booz Allen Hamilton (BAH)</h1>
+          {/* <h1 className="font-medium text-xl">Booz Allen Hamilton (BAH)</h1> */}
+          <img src="/Booz_Allen_Hamilton_logo.svg" />
           <div className="grow" />
           <span className="text-neutral-500 text-xl">2021-Current</span>
         </div>
@@ -253,12 +254,47 @@ export default function CareerPage() {
           asked for a better project to learn as much as I did. I left college
           thinking I wanted to get into data science, but my time at the CDC
           shifted my career trajectory to where it is today - Platform
-          Engineering. I’ve included this timeline primarily as a personal
-          roadmap to look back on the milestones that shaped me.
+          Engineering.
         </p>
+        <span>Summary of responsibilities:</span>
+        <p className="flex flex-col gap-1 text-neutral-400 text-pretty">
+          <span>
+            - Designed and built internal monitoring and status tooling,
+            including outage alerting, uptime tracking, and user-facing status
+            pages
+          </span>
+          <span>
+            - Built internal applications to manage user lifecycle workflows,
+            including onboarding, inactivity tracking, and automated offboarding
+          </span>
+          <span>
+            - Reduced operational toil through automation, including
+            programmatic management of directory services and access controls
+          </span>
+          <span>
+            - Served as a system administrator for Linux-based cloud
+            infrastructure in production environments
+          </span>
+          <span>
+            - Architected and operated infrastructure for public-facing
+            applications on Azure, with a focus on automation and scalability
+          </span>
+          <span>
+            - Provided technical mentorship and guidance in automation,
+            networking, and infrastructure
+          </span>
+          <span>
+            - Acted as a subject matter expert for a data science SaaS platform,
+            supporting adoption, reliability, and team enablement
+          </span>
+        </p>
+
         <Dialog>
           <DialogTrigger asChild>
-            <Button className="lg:hidden hover:cursor-pointer">
+            <Button
+              className="lg:hidden hover:cursor-pointer py-3"
+              variant={"outline"}
+            >
               Open Timeline
             </Button>
           </DialogTrigger>
@@ -328,7 +364,7 @@ export default function CareerPage() {
           orientation="vertical"
           alternating={false}
           alignment="bottom/right"
-          className="pl-0 items-end"
+          className="pl-0 items-start"
           vertItemSpacing={140}
           noCards
         >
