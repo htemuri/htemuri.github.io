@@ -1,4 +1,13 @@
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import Timeline, {
   TimelineItem,
   TimelineItemDate,
@@ -247,6 +256,50 @@ export default function CareerPage() {
           Engineering. I’ve included this timeline primarily as a personal
           roadmap to look back on the milestones that shaped me.
         </p>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button className="lg:hidden hover:cursor-pointer">
+              Open Timeline
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="h-full max-w-screen py-2 overflow-hidden">
+            <DialogHeader className="py-3 overflow-hidden flex items-center">
+              <DialogTitle className="py-3">Timeline</DialogTitle>
+              {/* <DialogDescription className="overflow-y-auto"> */}
+              <div className="overflow-y-auto">
+                <Timeline
+                  orientation="vertical"
+                  alternating={false}
+                  alignment="bottom/right"
+                  className="pl-0 flex items-center"
+                  vertItemSpacing={160}
+                  vertItemMaxWidth={270}
+                  noCards
+                >
+                  {timelineData.map((item, idx) => (
+                    <TimelineItem
+                      key={idx}
+                      variant={item.variant}
+                      className="text-left p-3"
+                    >
+                      {item.date && (
+                        <TimelineItemDate className="pt-4">
+                          {item.date.toDateString()}
+                        </TimelineItemDate>
+                      )}
+                      <TimelineItemTitle>{item.title}</TimelineItemTitle>
+                      <TimelineItemDescription>
+                        {item.description}
+                      </TimelineItemDescription>
+                    </TimelineItem>
+                  ))}
+                </Timeline>
+              </div>
+              {/* </DialogDescription> */}
+            </DialogHeader>
+            <div className="lg:hidden"></div>
+          </DialogContent>
+        </Dialog>
         <div className="flex gap-3 py-2 items-start">
           <span className="text-green-300">Skills</span>
           <div className="flex flex-wrap gap-2">
@@ -280,35 +333,6 @@ export default function CareerPage() {
           className="pl-0 items-end"
           vertItemSpacing={140}
           // vertItemMaxWidth={250}
-          noCards
-        >
-          {timelineData.map((item, idx) => (
-            <TimelineItem
-              key={idx}
-              variant={item.variant}
-              className="text-center p-3"
-            >
-              {item.date && (
-                <TimelineItemDate className="pt-4">
-                  {item.date.toDateString()}
-                </TimelineItemDate>
-              )}
-              <TimelineItemTitle>{item.title}</TimelineItemTitle>
-              <TimelineItemDescription>
-                {item.description}
-              </TimelineItemDescription>
-            </TimelineItem>
-          ))}
-        </Timeline>
-      </div>
-      <div className="h-full w-full px-3 overflow-auto lg:hidden">
-        <Timeline
-          orientation="vertical"
-          // alternating={false}
-          alignment="bottom/right"
-          className=""
-          vertItemSpacing={110}
-          vertItemMaxWidth={250}
           noCards
         >
           {timelineData.map((item, idx) => (
