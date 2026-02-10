@@ -6,6 +6,7 @@ import {
   createContext,
   CSSProperties,
   HTMLAttributes,
+  JSXElementConstructor,
   ReactElement,
   useContext,
   useLayoutEffect,
@@ -14,6 +15,14 @@ import {
 } from "react";
 import { cn } from "@/lib/utils";
 import { cva, VariantProps } from "class-variance-authority";
+
+export interface TimelineData extends VariantProps<
+  typeof timelineItemVariants
+> {
+  title: string;
+  description: React.JSX.Element;
+  date?: Date;
+}
 
 // CSS VARIANTS
 
@@ -27,6 +36,7 @@ const timelineDotVariants = cva(
         secondary: "border-secondary",
         destructive: "border-destructive",
         outline: "",
+        current: "",
       },
       hollow: {
         true: "border-2 bg-card",
@@ -54,6 +64,11 @@ const timelineDotVariants = cva(
         variant: "outline",
         class: "bg-background",
       },
+      {
+        hollow: false,
+        variant: "current",
+        class: "bg-cyan-300",
+      },
     ],
     defaultVariants: {
       variant: "default",
@@ -73,6 +88,7 @@ const timelineItemVariants = cva(
         destructive:
           "bg-destructive/10 border border-destructive/20 text-destructive-foreground shadow-sm",
         outline: "bg-transparent border shadow-sm",
+        current: "bg-cyan-300 shadow-sm",
       },
       noCards: {
         true: "border-none shadow-none bg-transparent",
@@ -94,6 +110,7 @@ const timelineBranchVariants = cva("absolute z-0", {
       secondary: "bg-secondary",
       destructive: "bg-destructive",
       outline: "bg-border",
+      current: "bg-cyan-300",
     },
   },
   defaultVariants: {
@@ -277,7 +294,7 @@ export default function Timeline({
     <div
       id="timeline-container"
       className={cn(
-        "flex h-full w-full p-4",
+        "flex h-full p-4",
         isVertical ? "flex-col" : "flex-row",
         className,
       )}
@@ -561,12 +578,12 @@ export function TimelineItemDescription({
   ...props
 }: TimelineItemDescriptionProps) {
   return (
-    <p
+    <div
       className={cn("text-sm text-muted-foreground mt-2", className)}
       {...props}
     >
       {children}
-    </p>
+    </div>
   );
 }
 

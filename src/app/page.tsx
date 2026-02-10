@@ -22,7 +22,7 @@ I’m a software engineer based in Gainesville, Georgia (and open to relocating 
 
 Right now, I’m on a sabbatical to get back to the basics. Even though I’ve spent years in the cloud, I’ve always been curious about what’s happening under those layers of abstraction. I'm currently spending my time deep-diving into computer science fundamentals: computer architecture, distributed systems, operating systems, and networking (all mostly through the lens of Go). A few years ago, I took a similar leave of absence (~3 months) to study Linux and networking in depth; it fundamentally changed how I worked when I returned, and I’m spending this stint building that same level of mastery for the next chapter of my career.
 
-When I’m not in a terminal, I’m a bit of a serial hobbyist, haha. I love to lift, but at the moment I also dabble in woodworking, drumming, reading fantasy, sewing, and audiophile stuff (designed and built out my dad's home theater 🙂).
+When I’m not in a terminal, I’m a bit of a serial hobbyist 😋. I love to lift, but at the moment I also dabble in woodworking, drumming, reading fantasy, sewing, and audiophile stuff (designed and built out my dad's home theater).
   
 Thanks for visiting!
 
