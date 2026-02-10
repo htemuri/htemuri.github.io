@@ -40,7 +40,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <GravityStarsBackground
-            className={`inset-0 flex items-center justify-center rounded-xl bg-[#090b10] z-2`}
+            className={`inset-0 h-screen flex items-center justify-center rounded-xl bg-[#090b10] z-2`}
             starsCount={70}
           />
           {/* <div className="bg-[#0d1017] h-screen max-h-screen overflow-hidden z-2" /> */}

@@ -265,7 +265,6 @@ export default function CareerPage() {
           <DialogContent className="h-full max-w-screen py-2 overflow-hidden">
             <DialogHeader className="py-3 overflow-hidden flex items-center">
               <DialogTitle className="py-3">Timeline</DialogTitle>
-              {/* <DialogDescription className="overflow-y-auto"> */}
               <div className="overflow-y-auto">
                 <Timeline
                   orientation="vertical"
@@ -295,7 +294,6 @@ export default function CareerPage() {
                   ))}
                 </Timeline>
               </div>
-              {/* </DialogDescription> */}
             </DialogHeader>
             <div className="lg:hidden"></div>
           </DialogContent>
@@ -332,7 +330,6 @@ export default function CareerPage() {
           alignment="bottom/right"
           className="pl-0 items-end"
           vertItemSpacing={140}
-          // vertItemMaxWidth={250}
           noCards
         >
           {timelineData.map((item, idx) => (
