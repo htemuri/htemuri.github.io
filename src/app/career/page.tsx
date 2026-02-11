@@ -246,7 +246,7 @@ export default function CareerPage() {
           {/* <h1 className="font-medium text-xl">Booz Allen Hamilton (BAH)</h1> */}
           <img src="/Booz_Allen_Hamilton_logo.svg" />
           <div className="grow" />
-          <span className="text-neutral-500 text-xl">2021-Current</span>
+          <span className="text-neutral-500 text-lg">2021 - Current</span>
         </div>
         <p className="text-neutral-400 text-pretty leading-7">
           My time at BAH has been a wild ride, full of new experiences and great
