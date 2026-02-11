@@ -48,7 +48,7 @@ const timelineData: TimelineData[] = [
           href={
             "https://www.cdc.gov/data-modernization/php/technologies/edav.html"
           }
-          className="underline text-blue-300"
+          className="underline text-cyan-300"
         >
           EDAV
         </Link>{" "}
@@ -177,7 +177,7 @@ const timelineData: TimelineData[] = [
       <p>
         Waging war on Sharepoint word docs 😋! More than a couple of my
         teammates wanted Markdown, so I deployed{" "}
-        <Link href={"https://nextra.site/"} className="underline text-blue-300">
+        <Link href={"https://nextra.site/"} className="underline text-cyan-300">
           Nextra
         </Link>{" "}
         to kick start that effort.
@@ -246,9 +246,9 @@ export default function CareerPage() {
           {/* <h1 className="font-medium text-xl">Booz Allen Hamilton (BAH)</h1> */}
           <img src="/Booz_Allen_Hamilton_logo.svg" />
           <div className="grow" />
-          <span className="text-neutral-500 text-lg">2021 - Current</span>
+          <span className="text-muted-foreground">2021 - Current</span>
         </div>
-        <p className="text-neutral-400 text-pretty leading-7">
+        <p className="text-muted-foreground text-pretty leading-7">
           My time at BAH has been a wild ride, full of new experiences and great
           mentors/coworkers. As my first job out of college, I couldn't have
           asked for a better project to learn as much as I did. I left college
@@ -257,7 +257,7 @@ export default function CareerPage() {
           Engineering.
         </p>
         <span>Summary of responsibilities:</span>
-        <p className="flex flex-col gap-1 text-neutral-400 text-pretty">
+        <p className="flex flex-col gap-1 text-muted-foreground text-pretty">
           <span>
             - Designed and built internal monitoring and status tooling,
             including outage alerting, uptime tracking, and user-facing status
