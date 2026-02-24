@@ -240,8 +240,8 @@ const azureSkills = [
 
 export default function CareerPage() {
   return (
-    <div className="flex max-lg:flex-col h-full items-stretch w-full">
-      <div className="h-full overflow-y-auto flex flex-col gap-3 lg:max-w-5/8 lg:w-1/2 pl-6 max-lg:pr-5 pt-4 max-lg:py-3 lg:pr-4">
+    <div className="flex max-lg:flex-col h-full w-full items-center">
+      <div className="h-full overflow-y-auto flex flex-col gap-3  w-full px-6 pt-4">
         <div className="flex items-center">
           {/* <h1 className="font-medium text-xl">Booz Allen Hamilton (BAH)</h1> */}
           <img src="/Booz_Allen_Hamilton_logo.svg" />
@@ -251,10 +251,11 @@ export default function CareerPage() {
         <p className="text-muted-foreground text-pretty leading-7">
           My time at BAH has been a wild ride, full of new experiences and great
           mentors/coworkers. As my first job out of college, I couldn't have
-          asked for a better project to learn as much as I did. I left college
+          asked for a better project to learn as much as I did.
+          {/* I left college
           thinking I wanted to get into data science, but my time at the CDC
           shifted my career trajectory to where it is today - Platform
-          Engineering.
+          Engineering. */}
         </p>
         <span>Summary of responsibilities:</span>
         <p className="flex flex-col gap-1 text-muted-foreground text-pretty">
@@ -289,7 +290,7 @@ export default function CareerPage() {
           </span>
         </p>
 
-        <Dialog>
+        {/* <Dialog>
           <DialogTrigger asChild>
             <Button
               className="lg:hidden hover:cursor-pointer py-3"
@@ -333,7 +334,7 @@ export default function CareerPage() {
             </DialogHeader>
             <div className="lg:hidden"></div>
           </DialogContent>
-        </Dialog>
+        </Dialog> */}
         <div className="flex gap-3 py-2 items-start">
           <span className="text-green-300">Skills</span>
           <div className="flex flex-wrap gap-2">
@@ -359,7 +360,7 @@ export default function CareerPage() {
           </div>
         </div>
       </div>
-      <div className="h-full w-1/2 overflow-y-auto overflow-x-hidden max-lg:hidden">
+      {/* <div className="h-full w-1/2 overflow-y-auto overflow-x-hidden max-lg:hidden">
         <Timeline
           orientation="vertical"
           alternating={false}
@@ -386,7 +387,7 @@ export default function CareerPage() {
             </TimelineItem>
           ))}
         </Timeline>
-      </div>
+      </div> */}
     </div>
   );
 }
