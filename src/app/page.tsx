@@ -34,7 +34,7 @@ Thanks for visiting!
       <CodeBlock
         code={introductionCode}
         lang="ansi"
-        duration={3000}
+        duration={500}
         writing={true}
         onDone={() => {
           setTimeout(() => setShowWhoami(true), 200);
