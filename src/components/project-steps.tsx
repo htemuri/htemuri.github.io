@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 import {
   Card,
@@ -15,7 +14,6 @@ import {
 } from "@/components/ui/card";
 import { Slide } from "./animate-ui/primitives/effects/slide";
 import { Badge } from "./ui/badge";
-import Link from "next/link";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 
@@ -27,7 +25,6 @@ export interface Project {
   description: React.JSX.Element;
   linkToBlog: string;
   linkToRepo: string;
-  image: string;
 }
 
 interface ProjectStepsProps {

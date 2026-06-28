@@ -9,9 +9,6 @@ export default function Home() {
 
   const introductionCode = `[1m[1;32m$[0m whoami[0m
 `;
-  /*
-im on a sabbatical right now since sept 2025 but my job was having a bunch of hats related to platform engineering - i was a sysadmin, a mentor for a newly starting sysadmin, the networking sme, the everything troubleshooting guy (vms/azure app services,anything that could break in azure), i wrote some applications that showed customer metrics/status page/rest api for active directory, i also explored new technology like k8s/argo/helm workflows, also wrote cicd pipelines for all my apps.
-*/
 
   const whoami = `Hey! I'm [1;36mHarris[0m.[0m
 

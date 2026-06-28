@@ -23,8 +23,6 @@ const projects: Project[] = [
         enable detailed architectural experimentation and debugging.
       </p>
     ),
-    image:
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2144&auto=format&fit=crop",
   },
   {
     title: "rust-ipmi",
@@ -49,8 +47,6 @@ const projects: Project[] = [
         robust Rust systems programming.
       </p>
     ),
-    image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop",
   },
 ];
 
