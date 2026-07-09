@@ -12,7 +12,7 @@ export default function Home() {
 
   const whoami = `Hey! I'm [1;36mHarris[0m.[0m
 
-I’m a software engineer based in Gainesville, Georgia (and open to relocating anywhere in the US). I spent the last few years as a "wearer of many hats" in platform engineering - moving between linux sysadmin, Azure administration, and building internal applications/automations. Having hands-on experience with every layer of our stack naturally made me the go-to person for resolving critical breaks or unblocking complex technical hurdles.
+I’m a software engineer based in Gainesville, Georgia. I spent the last few years as a "wearer of many hats" in platform engineering - moving between linux sysadmin, Azure administration, and building internal applications/automations. Having hands-on experience with every layer of our stack naturally made me the go-to person for resolving critical breaks or unblocking complex technical hurdles.
 
 Right now, I’m on a sabbatical to get back to the basics. Even though I’ve spent years in the cloud, I’ve always been curious about what’s happening under those layers of abstraction. I'm currently spending my time deep-diving into computer science fundamentals: computer architecture, distributed systems, operating systems, and networking (all mostly through the lens of Go). A few years ago, I took a similar leave of absence (~3 months) to study Linux and networking in depth; it fundamentally changed how I worked when I returned, and I’m spending this stint building that same level of mastery for the next chapter of my career.
 
@@ -31,7 +31,7 @@ Thanks for visiting!
       <CodeBlock
         code={introductionCode}
         lang="ansi"
-        duration={500}
+        duration={1000}
         writing={true}
         onDone={() => {
           setTimeout(() => setShowWhoami(true), 200);

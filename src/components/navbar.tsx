@@ -20,11 +20,10 @@ export default function NavBar({
       <div className="flex gap-1 items-center overflow-hidden">
         <ChevronRightIcon width={20} className="shrink-0" />
         <CodeBlock
-          code={"[1;32mHarris Temuri[0m - Platform Engineer"}
+          code={"[1;32mHarris Temuri[0m - Platform Engineer\0"}
           lang="ansi"
           className="mt-0.5"
-          writing={true}
-          duration={2000}
+          writing={false}
         />
       </div>
       <div className="grow" />
