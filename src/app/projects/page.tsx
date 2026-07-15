@@ -2,6 +2,30 @@ import ProjectSteps, { Project } from "@/components/project-steps";
 
 const projects: Project[] = [
   {
+    title: "Azure Pulumi Service Broker",
+    technologies: ["golang", "iac", "azure", "pulumi"],
+    shortDescription:
+      "Creating an Azure self-service API replicating what we needed at CDC - using Pulumi instead of Terraform.",
+    yearWorked: "2026",
+    linkToBlog: "https://htemuri.github.io/0xBADC0DE/projects/service-broker",
+    linkToRepo: "https://github.com/htemuri/azure-pulumi-service-broker",
+    description: (
+      <p>
+        The Azure-Pulumi service broker is an gRPC API that allows users to
+        provision templated infrastructure to Azure through Pulumi. In practice,
+        it solves the problem of needing to supply repeatable infrastructure
+        through user requests.
+        <br />
+        <br />
+        The current implementation is a proof of concept with a lot of room for
+        improvement if you were to actually deploy it to a production
+        environment. My write up for this project in{" "}
+        <code className="text-cyan-300 mt-0.5">0xBADC0DE</code> discusses the
+        improvements I would make as well as a demo video.
+      </p>
+    ),
+  },
+  {
     title: "LC-3b μArchitecture Simulator",
     technologies: ["golang", "comp-arch"],
     shortDescription:
